@@ -1,0 +1,843 @@
+#nav {
+    background-color: #0c7b9d;
+    /* color: #fff; */
+    display: flex;
+    margin: auto;
+    padding-left: 125px;
+    height: 23px;
+    padding-top: 5px;
+
+    padding-bottom: 6px;
+    font-family: sans-serif, poppins;
+}
+
+.nav {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+@media (max-width:375px) {
+    #nav {
+        padding-left: 10px;
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
+
+    #extra {
+        display: none;
+    }
+
+    #logo {
+        width: 80%;
+    }
+
+    #section {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:1300px) {
+    #extra {
+        display: none;
+    }
+}
+
+#logo {
+    height: 100px;
+    width: 770px;
+}
+
+#one {
+    color: blue;
+    background-color: white;
+    margin-right: 10px;
+    font-size: small;
+}
+
+#first {
+    margin-right: 10px;
+    color: red;
+    font-size: small;
+    background-color: white;
+}
+
+#imageheader {
+    padding-left: 120px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#extra {
+    padding-top: 5px;
+    height: 100px;
+}
+
+#dropdown {
+    position: sticky;
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(70, 36, 101);
+    display: flex;
+    color: white;
+    padding-top: 10px;
+    padding-left: 120px;
+    font-size: 14px;
+}
+
+#dropul {
+    list-style-type: none;
+    /* Removes the bullets */
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    display: flex;
+}
+
+.li {
+    margin-right: 13px;
+    position: relative;
+
+}
+
+.material-symbols-outlined {
+    /* padding-top: 10px;
+    margin-left: 1px; */
+    vertical-align: middle;
+    padding-left: 13px;
+}
+
+#scrolling {
+    margin-left: 120px;
+    border: 1px solid blue;
+    height: 60px;
+    width: 1183px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scrolling_text {
+    /* display: inline-block; */
+
+    font-size: 15px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: blue;
+}
+
+.innerscrolling {
+    display: inline block;
+    animation: scrollHorizontally 30s linear 0s infinite;
+    padding-top: 20px;
+}
+
+@keyframes scrollHorizontally {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.alignnone {
+    vertical-align: super;
+}
+
+.innerscrolling:hover {
+    animation: none;
+}
+
+#slideshoww {
+    height: 400px;
+    width: 810px;
+    margin-left: 120px;
+    margin-right: 0px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    background-color:#f3f3f3;
+}
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    /* width: calc(100% * 5); 5 slides */
+    animation: slide-animation 10s infinite; /* Infinite animation */
+    margin-left: 40px;
+}
+.slide {
+    width: 100%; /* Slide width matches container */
+    height: 100%;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+.slide img {
+    width: 90%;
+    height: 90%;
+    object-fit:fill; /* Adjust image aspect ratio */
+}
+
+@keyframes slide-animation {
+    0% { transform: translateX(0%); }      /* First slide */
+    20% { transform: translateX(0%); }    /* Pause on the first slide */
+    25% { transform: translateX(-100%); } /* Slide 2 */
+    45% { transform: translateX(-100%); } /* Pause on the second slide */
+    50% { transform: translateX(-200%); } /* Slide 3 */
+    70% { transform: translateX(-200%); } /* Pause on the third slide */
+    75% { transform: translateX(-300%); } /* Slide 4 */
+    95% { transform: translateX(-300%); } /* Pause on the fourth slide */
+    100% { transform: translateX(-400%); } /* Slide 5 */
+}
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+#prev {
+    top:170px;
+    left: 50px;
+}
+
+#next {
+    top:170px;
+    right: 50px;
+}
+
+/* Hide default button focus outline */
+.nav-btn:focus {
+    outline:none;
+}
+
+#fl {
+    display: flex;
+}
+
+#boards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#autonomous_board {
+    background-color: rgb(47, 120, 176);
+    height: 200px;
+    width: 376px;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+}
+
+#Ouboard {
+    height: 200px;
+    width: 376px;
+    background-color: rgb(47, 120, 176);
+    display: flex;
+    flex-direction: column;
+
+}
+
+#autonomous_board {}
+
+/* Set up the heading */
+.heading {
+    background-color: rgb(93, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 70px;
+    letter-spacing: 1px;
+}
+
+#OU {
+    padding-left: 120px;
+    margin-bottom: 0px;
+}
+
+/* Set the content container */
+#contentOU {
+    position: relative;
+    /* So scrolling items are positioned within this container */
+    height: 160px;
+    /* Control visible height */
+    overflow: hidden;
+    /* Hide overflow to prevent overlapping */
+    /* background-color: gray; Optional for clarity */
+}
+
+/* Set animation on .contentE items */
+.contentE {
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    color: white;
+    /* background-color: gold; */
+    position: relative;
+    animation: scrollvertically 10s linear infinite;
+    /* border-bottom: 0.4px solid blue; */
+}
+
+/* Define keyframes for smooth scroll */
+@keyframes scrollvertically {
+    0% {
+        top: 100%;
+        /* Start below the visible area */
+    }
+
+    100% {
+        top: -100%;
+        /* Move all the way up */
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+#contentA {
+    position: relative;
+    /* So scrolling items are positioned within this container */
+    height: 160px;
+    /* Control visible height */
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 160px;
+    top: 100%;
+    left: 10;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    padding-left: 0px;
+    color: white;
+    font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Main container for scrolling slides */
+#shortscrolling {
+    border: 2px solid black;
+    height: 120px;
+    width: 1182px; /* Adjust based on your need */
+    margin: 5px 112px 5px 120px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+/* Container for the slides */
+.shortscroll-container {
+    display: flex;
+    width: auto; /* Two slides */
+    animation: short-slide-animation 8s infinite; /* Automatic scrolling animation */
+}
+
+/* Each slide */
+.shortslide {
+    flex-shrink: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%;
+    position: relative;
+}
+
+.shortslide img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+/* Keyframes for automatic sliding */
+@keyframes short-slide-animation {
+    0% { transform: translateX(0%); }       /* First slide */
+    40% { transform: translateX(0%); }     /* Pause on the first slide */
+    50% { transform: translateX(-100%); }  /* Slide to second slide */
+    90% { transform: translateX(-100%); }  /* Pause on the second slide */
+    100% { transform: translateX(0%); }    /* Reset back to first slide */
+}
+
+/* Navigation buttons (non-functional, for styling) */
+.short-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#prev-short {
+    left: 10px;
+}
+
+#next-short {
+    right: 10px;
+}
+
+.short-nav-btn:focus {
+    outline: none;
+}
+
+
+#foursec {
+
+    height: 400px;
+    width: 1183px;
+    margin: 5px 112px 5px 120px;
+    display: flex;
+
+}
+
+.subsections {}
+
+#events {
+    width: 415px;
+    height: 400px;
+    margin: 1px 1px;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+#events div {
+    /* display: flex; */
+
+    /* flex-direction: column; */
+}
+
+
+#ourvision {
+    height: 100px;
+    border: 0.5px solid white;
+    width: 385px;
+}
+
+#ourvision div+p,
+#ourmission ul {
+    text-align: justify;
+    font-size: 13.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+
+#ourmission {
+    width: 385px;
+    height: 300px;
+    margin: 1px 1px;
+}
+
+#our {
+    display: flex;
+    flex-direction: column;
+}
+
+#documents {
+    margin: 1px 1px;
+    width: 380px;
+}
+
+#section {
+    margin: 5px 112px 5px 120px;
+
+    height: 250px;
+    width: 1183px;
+
+    display: flex;
+
+}
+/* Main container for slideshow */
+#shortscrollingg {
+    border: 2px solid black;
+    height: 195px;
+    width: 298px; /* Adjust as per need */
+    /* margin: 5px 112px 5px 120px; */
+    overflow: hidden;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+/* Slideshow container */
+.fade-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual slides */
+.fade-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Fading effect */
+}
+
+.fade-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Active slide - This class is cycled by CSS */
+.fade-active {
+    opacity: 1;
+}
+
+/* Keyframes for cycling slides */
+@keyframes fade-animation {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    45% { opacity: 0; }
+    50% { opacity: 1; }
+    70% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Automatic cycling for 4 slides */
+.fade-slide:nth-child(1) {
+    animation: fade-animation 16s infinite;
+}
+
+.fade-slide:nth-child(2) {
+    animation: fade-animation 16s infinite 4s;
+}
+
+.fade-slide:nth-child(3) {
+    animation: fade-animation 16s infinite 8s;
+}
+
+.fade-slide:nth-child(4) {
+    animation: fade-animation 16s infinite 12s;
+}
+
+
+.Activities {
+    height: 250px;
+    border: 2px dashed white;
+    width: 300px;
+}
+
+#smalllogo {
+    width: 1183px;
+    height: 120px;
+    /* background-color: crimson; */
+    /* border: 1px solid blue; */
+    margin-left: 120px;
+}
+
+#smalllogo img {
+    height: 100px;
+    width: 1183px;
+}
+
+footer {
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: inherit;
+    background-color: #3E2A3F;
+    padding: 5px 112px 0px 120px;
+    gap: 2px;
+    color: white;
+}
+
+#okati {
+    grid-column: 1 / 2;
+    /* background-color: aqua; */
+}
+
+#rendu {
+    grid-column: 2 / 3;
+    /* background-color: yellow; */
+}
+
+#mudu {
+    grid-column: 3/4;
+
+}
+
+#nalugu {
+    grid-column: 4/5;
+
+}
+
+#footerimage {
+    height: 70px;
+    width: 305px;
+    margin-bottom: 100px;
+}
+
+#ouraddress {
+    font-size: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    border-bottom: 2px solid rgb(28, 173, 28);
+}
+
+#pre {
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+
+#some {
+    height: 15px;
+    width: 15px;
+}
+
+#pageviews {
+    font-size: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(28, 173, 28);
+
+}
+
+#Info_links {
+    font-size: 17px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+
+    border-bottom: 2px solid rgb(28, 173, 28);
+}
+
+.infoo {
+    list-style-type: none;
+    padding-left: 0%;
+
+}
+
+.info a {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.info {
+    margin-bottom: 7px;
+}
+
+#Quick_links {
+    font-size: 17px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+
+    border-bottom: 2px solid rgb(28, 173, 28);
+}
+
+.Quicklistitems a {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.Quicklistitems {
+    margin-bottom: 7px;
+}
+
+.heads_of_activties {
+    font-size: 20px;
+    padding-left: 10%;
+    height: 26px;
+    letter-spacing: 1.6px;
+    padding-top: 4px;
+
+}
+
+.heads_of_activties b {
+    margin: 0;
+    padding: 0;
+}
+
+#Student_activities_image_scrolling {
+    height: 400px;
+    width: 100%;
+    color: grey;
+}
+
+.MECS_CLUBS {
+    padding-left: 25%;
+}
+
+.MECS_CLUBS b {
+    margin: 0;
+    padding: 0;
+}
+
+.LEARNING_RESOURCES {
+    padding-left: 3%;
+}
+
+.LEARNING_RESOURCES b {
+    margin: 0;
+    padding: 0;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 0px;
+}
+
+.inside div a {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+
+}
+
+.inside div {
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    background-color: #04437d;
+    ;
+    margin: 2px 0px 3px 0px;
+}
+
+.doc {
+    padding-left: 30%;
+}
+
+.insider {
+    display: flex;
+    flex-direction: column;
+    /* Arrange the child divs vertically */
+    height: auto;
+}
+
+.insider div {
+    display: flex;
+    /* Enable Flexbox for centering */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    text-align: center;
+    background-color: #04437d;
+    /* Your background color */
+    height: 35px;
+    /* Adjust height to provide better alignment */
+    margin: 5px 0;
+    /* Vertical spacing */
+}
+
+.insider div a {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* Text color */
+}
+
+
+
+.stretch {
+    width: 120px;
+    /* border: 2px solid black; */
+    /* height: 100px; */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#dated {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: green;
+    height: 45px;
+    display: block;
+    width: 33px;
+}
+
+#month {
+    font-size: 17px;
+    color: rgb(59, 29, 29);
+    height: 30px;
+    font-family: sans-serif;
+    display: block;
+    width: 33px;
+    text-align: center;
+    padding-bottom: 1px;
+    border-bottom: 3px solid green;
+    box-sizing: border-box;
+}
+
+#contan {
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    height: 100px;
+    /* border: 2px solid black; */
+    margin-top: 5px;
+}
+
+#parad {
+    font-size: 18px;
+    color: rgb(59, 29, 29);
+    font-family: sans-serif;
+    width: 350px;
+    padding-left: 13px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#iconsd {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#iconsd i{
+    padding-right: 10px;
+}
+
+.timed {
+
+    font-size: 15px;
+    color: green;
+    vertical-align: middle;
+    padding:0px 10px;
+
+}
+#aravind{
+height:230px;
+width:300px;    
+}

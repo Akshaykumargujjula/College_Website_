@@ -1,0 +1,46 @@
+#dated{
+    font-size:40px ;
+    font-family: sans-serif;
+    color: green;
+height: 45px;
+display: block;
+width: 33px;
+}
+#month{
+    font-size: 17px;
+    color: rgb(59, 29, 29);
+    height: 30px;
+    font-family: sans-serif;
+    display: block;
+    width: 33px;
+    text-align: center;
+    padding-bottom: 1px;
+    border-bottom: 3px solid green;
+    box-sizing: border-box;
+}
+#contan{
+    display: flex;
+    flex-direction: row;
+    width: 415px;
+    border: 2px solid black ;
+}
+#parad{
+    font-size:18px ;
+    color: rgb(59, 29, 29);
+    font-family: sans-serif;
+width: 350px;
+padding-left: 13px;
+padding-top: 5px;
+font-weight:bold;
+}
+#iconsd{
+    padding-left: 30px;
+}
+
+.timed{
+
+    font-size: 15px;
+    color: green;
+    vertical-align: middle;
+
+}
